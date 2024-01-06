@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  color: #666;
+  
+}
+.home__body {
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  color: #666;
+  background-image: url(/frontend/img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+.formulario__body {
+  font-family: 'Dosis', sans-serif;
+  height: 100vh;
+  line-height: 1.6;
+  color: #666;
+  background-image: url(/frontend/img/formulario-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1.5rem 2.5rem;
+  background: hsl(228, 98%, 16%);
+  margin: 0 0 2rem 0;
+  font-size: 1.5rem;
+  color: white;
+  width: 100%;
+}
+
+img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+}
+
+p {
+  color: rgb(255, 255, 255);
+}
+
+.form-group {
+  background-color: rgba(0, 0, 0, 0.393);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.form-group__label {
+  display: block;
+  text-align: center;
+  width: 80%;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.product-form-contentNamePrice {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-group__input {
+  padding: 5px 10px;
+  border: none;
+  color: #111421;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1rem;
+  background: rgba(0, 0, 0, 0.668);
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.696);
+  border-radius: 12px;
+  border: 2px solid white;;
+  overflow: hidden;
+  transition: all .2s linear;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card2 {
+  margin: 1rem;
+  width: 800px;
+  /* background-image: url('/frontend/img/form-bg.webp'); */
+  background: transparent;
+  background-size: contain ;
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+  border-radius: 12px;
+  transition: all .2s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form__cardBox {
+  display: flex;
+  justify-content: center;
+}
+
+.favorita {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  display: block;
+  cursor: pointer;
+  border: .5px solid slategray;
+}
+
+.more {
+  font-weight: bold;
+  color: rgb(177, 5, 62);
+  text-transform: capitalize;
+}
+
+.card:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+  transform: translate3D(0, -2px, 0);
+}
+.action {
+  text-align: center;
+}
+.botonAgregar , .botonModificar{
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  background-image: #1e1e1e;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  margin: 5px;
+}
+.botonBorrar{
+  color: white;
+  background-image: linear-gradient(120deg, #000000 0%, #000000 100%);
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  margin: 5px;
+}
+.formulario{
+  margin: auto;
+  width: 40%;
+  border-radius: 10px;
+}
+.formulario label {
+  padding: 1.5rem 2.5rem;
+  margin: 0 0 2rem 0;
+  font-size: 1.5rem;
+}
+input, select{
+  /* width: 60%; */
+  /* height: 25px; */
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .form__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  }
+  .box__formulario {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    width: 1;
+    flex: 1 1 calc(33% - 2rem);
+  }
+}
+
+.card:nth-child(2n) h1 {
+  background: #1d1d1d;
+}
+
+.card:nth-child(4n) h1 {
+  background: #321e1f;
+}
+
+.card:nth-child(5n) h1 {
+  background: #01172e;
+}

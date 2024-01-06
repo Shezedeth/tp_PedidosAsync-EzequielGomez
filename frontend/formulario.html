@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Película</title>
+    <!-- boostrap-css -->
+    <script src="https://kit.fontawesome.com/e4646141a1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="formulario__body">
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+        </ul>
+    </nav>
+    <div class="form__cardBox">
+        <form class="product-form shadow card2 col-12">
+
+            <div class="product-form-contentNamePrice">
+
+                <div class="form-group">
+                    <input type="hidden" name="id">
+                    <div class="form-group">
+                        <label class="form-group__label" for="title">Título </label>
+                        <p><input class="form-control" type="text" name="title" id="title" required></p>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group__label" for="rating">Calificación </label>
+                        <p><input class="form-control" type="number" name="rating" id="rating" required></p>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group__label" for="awards">Premios </label>
+                        <p><input class="form-control" type="number" name="awards" id="awards" required></p>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group__label" for="release_date">Fecha de creación </label>
+                        <p><input class="form-control" type="date" name="release_date" id="release_date" required></p>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group__label" for="length">Duración </label>
+                        <p><input class="form-control" type="number" name="length" id="length" required></p>
+                    </div>
+
+                    <br>
+                    <div class="action">
+                        <button class="botonAgregar " id="editMovie">Editar</button>
+                        <button class="botonAgregar" id="createMovie">Crear</button>
+                        <button class="botonBorrar" id="deleteMovie">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="js/formulario.js"></script>
+    <!-- boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
